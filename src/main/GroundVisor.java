@@ -14,4 +14,12 @@ public class GroundVisor {
             return ground.getLandscape()[x][y].getState() == CellState.OCCUPIED;
     }
 
+    public Ground getGround() {
+        return ground;
+    }
+
+    public void setGround(Ground ground) {
+        this.ground = ground;
+    }
+
 }

@@ -9,14 +9,24 @@ import java.util.Scanner;
  */
 public class Rover implements Turnable, Moveable, ProgramFileAware {
 
+    private GroundVisor visor;
     private Direction direction;
     private int x, y;
 
+    public Rover() {
+        visor = new GroundVisor();
+    }
+
     @Override
     public void move(int x, int y) {
-        this.x = x;
-        this.y = y;
-        System.out.println("Moved to x = " + x + ", y = " + y);
+        if (!visor.hasObstacles(x, y)) {
+            this.x = x;
+            this.y = y;
+            System.out.println("Moved to x = " + x + ", y = " + y);
+        }
+        else {
+            System.out.println("Cannot move to x = " + x + "y = " + y + "! Obstacle is here!");
+        }
     }
 
     @Override
@@ -39,6 +49,10 @@ public class Rover implements Turnable, Moveable, ProgramFileAware {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public GroundVisor getVisor() {
+        return visor;
     }
 
 }

@@ -10,6 +10,12 @@ public class Ground {
 
     public Ground (int length, int width) {
         this.landscape = new GroundCell[length][width];
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < width; j++) {
+                this.landscape[i][j] = new GroundCell();
+            }
+        }
+
         this.length = length;
         this.width = width;
     }

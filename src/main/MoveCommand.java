@@ -19,4 +19,9 @@ public class MoveCommand implements RoverCommand{
         this.moveable.move(this.x, this.y);
     }
 
+    @Override
+    public String toString() {
+        return "move " + x + " " + y;
+    }
+
 }
