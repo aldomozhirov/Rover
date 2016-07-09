@@ -7,8 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         Rover r = new Rover();
-        r.move(1, 5);
-        r.turnTo(Direction.EAST);
+        r.executeProgramFile("commands.txt");
     }
 
 }

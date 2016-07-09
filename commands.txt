@@ -1,0 +1,4 @@
+turn WEST
+turn NORTH
+move 5 5
+turn SOUTH
