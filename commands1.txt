@@ -1,5 +1,4 @@
 turn WEST
 turn NORTH
-import commands1.txt
 move 10 5
 turn SOUTH
