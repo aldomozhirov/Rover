@@ -23,4 +23,20 @@ public class TurnCommand implements RoverCommand {
         return "turn " + direction;
     }
 
+    public Turnable getTurnable() {
+        return turnable;
+    }
+
+    public void setTurnable(Turnable turnable) {
+        this.turnable = turnable;
+    }
+
+    public Direction getDirection() {
+        return direction;
+    }
+
+    public void setDirection(Direction direction) {
+        this.direction = direction;
+    }
+
 }

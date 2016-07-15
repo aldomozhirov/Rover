@@ -1,0 +1,9 @@
+<?xml version="1.0"  encoding="WINDOWS-1251" ?>
+<root>
+    <turn direction="EAST"></turn>
+    <import filename="commands.txt"></import>
+    <move x="5" y="5"></move>
+</root>
+
+
+

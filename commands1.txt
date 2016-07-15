@@ -1,4 +1,5 @@
 turn WEST
 turn NORTH
 move 10 5
+import xmlcommands1.xml
 turn SOUTH

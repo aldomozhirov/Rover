@@ -10,7 +10,6 @@ public class ImportCommand implements RoverCommand {
 
     private List<RoverCommand> list = new LinkedList<>();
 
-
     @Override
     public void execute() {
         for (RoverCommand command : list) {

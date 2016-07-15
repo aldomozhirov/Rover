@@ -38,8 +38,7 @@ public class Rover implements Turnable, Moveable, ProgramFileAware {
     @Override
     public void executeProgramFile(String fileName) {
         try {
-            Scanner scanner = new Scanner(new File(fileName));
-            TextRoverCommandParser parser = new TextRoverCommandParser(this, scanner);
+            RoverCommandParser parser = new AutoRoverCommandParser(this, fileName);
             RoverCommand command;
             while ((command = parser.readNextCommand()) != null) {
                 command.execute();

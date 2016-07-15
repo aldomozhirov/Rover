@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Rover r = new Rover();
         r.getVisor().setGround(new Ground(20, 20));
-        r.executeProgramFile("commands.txt");
+        r.executeProgramFile("xmlcommands.xml");
     }
 
 }
